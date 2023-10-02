@@ -1,0 +1,48 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left-side {
+    background-image: url("/assests/img/images.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-side {
+    background-image: url("/assests/img/images.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    position: relative; /* Add this */
+}
+
+
+.left-side p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-style: italic; /* Add this */
+}
+
+
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.right-side {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 50%;
+}
