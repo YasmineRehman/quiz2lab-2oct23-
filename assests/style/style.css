@@ -1,6 +1,23 @@
+body{
+    padding: auto;
+
+}
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px; 
+    width: 100px; 
+    height: auto; 
+}
+.center-container {
+    display: flex;
+  justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will center the container vertically */
+}
 .login-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
 }
@@ -9,8 +26,8 @@
     background-image: url("/assests/img/images.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50%;
-    height: 100%;
+    width: 70%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,27 +39,28 @@
     background-image: url("/assests/img/images.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50%;
-    height: 100%;
-    position: relative; /* Add this */
+    width: 70%;
+    height: 100vh;
+    position: relative;
 }
 
 
 .left-side p {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    font-style: italic; /* Add this */
+    top: 0px;
+    left: 0px;
+    font-style: italic; 
 }
 
 
 
 .social-icons {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .right-side {
     background-color: #f4f4f4;
-    padding: 20px;
-    width: 50%;
+    padding: 30px;
+    width: 200%;
+    height: 100vh;
 }
