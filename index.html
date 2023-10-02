@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assests/style/style.css">
+
+</head>
+<body>
+    <div class="container login-container">
+        <div class="left-side">
+            <div class="social-icons">
+                <a href="#" class="btn btn-primary">
+                    <i class="fab fa-linkedin"></i> Sign Up with LinkedIn
+                </a>
+                <br>
+                <br>
+                <a href="#" class="btn btn-info">
+                    <i class="fab fa-twitter"></i> Sign Up with Twitter
+                </a>
+                <br>
+                <br>
+                <a href="#" class="btn btn-primary">
+                    <i class="fab fa-facebook"></i> Sign Up with Facebook
+                </a>
+                <br>
+            </div>
+        </div>
+        <div class="right-side">
+            <h2>Sign Up</h2>
+            <p>Get started absolutely free</p>
+            
+            <!-- Signup Form -->
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Add an event listener to the form for form submission
+        document.getElementById('signup-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            
+            // Get the form input values
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Print the values to the console
+            console.log('Email:', email);
+            console.log('Password:', password);
+            
+            // You can further process or submit the data to a server here if needed
+        });
+    </script>
+</body>
+</html>
